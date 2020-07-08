@@ -4,16 +4,12 @@
 //     gridstack.js may be freely distributed under the MIT license.
 
 (function(factory) {
-    if (typeof define === 'function' && define.amd) {
-        define(['jquery', 'lodash', 'jquery-ui/core', 'jquery-ui/widget', 'jquery-ui/mouse', 'jquery-ui/draggable',
-            'jquery-ui/resizable'], factory);
-    }
-    else if (typeof exports !== 'undefined') {
+ if (typeof exports !== 'undefined') {
       try { jQuery = require('jquery'); } catch(e) {}
       try { _ = require('lodash'); } catch(e) {}
       try {
         require('../../jquery-ui/ui/core.js');
-        require('../../jquery-ui/ui/widgets/widget.js');
+        require('../../jquery-ui/ui/widget.js');
         require('../../jquery-ui/ui/widgets/mouse.js');
         require('../../jquery-ui/ui/widgets/draggable.js');
         require('../../jquery-ui/ui/widgets/resizable.js');
