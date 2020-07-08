@@ -11,6 +11,13 @@
     else if (typeof exports !== 'undefined') {
       try { jQuery = require('jquery'); } catch(e) {}
       try { _ = require('lodash'); } catch(e) {}
+      try {
+        require('../../jquery-ui/ui/core.js');
+        require('../../jquery-ui/ui/widgets/widget.js');
+        require('../../jquery-ui/ui/widgets/mouse.js');
+        require('../../jquery-ui/ui/widgets/draggable.js');
+        require('../../jquery-ui/ui/widgets/resizable.js');
+      }
       factory(jQuery, _);
     }
     else {
